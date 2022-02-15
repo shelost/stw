@@ -23,6 +23,10 @@ body {
           justify-content: flex-start;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -293,19 +297,85 @@ a:hover {
     background-color: black;
     background-position: 0px -100px;
   }
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  #navbar #mast {
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 10px;
+  }
+  #navbar #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  #navbar #menu .bar {
+    width: 30px;
+    height: 2px;
+    margin: 3px;
+    background: black;
+  }
   #nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.4);
-    z-index: 4;
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 5;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #nav .navbtn {
-    color: rgba(0, 0, 0, 0.5);
+    color: black;
     font-size: 18px;
     font-weight: 400;
     margin: 15px;
@@ -314,6 +384,10 @@ a:hover {
   }
   #nav .navbtn:hover {
     color: black;
+  }
+  #nav.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   #banner {
     position: absolute;
@@ -355,6 +429,8 @@ a:hover {
     border: 1px solid white;
     -webkit-backdrop-filter: blur(15px);
             backdrop-filter: blur(15px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   .section .text {
     margin: 1vw;
@@ -510,7 +586,7 @@ a:hover {
     margin-top: 0;
   }
   .section.first {
-    margin-top: 70vh;
+    margin-top: calc(70vh - 50px);
   }
   .section.footer {
     text-align: center;
