@@ -32,10 +32,21 @@ a {
   text-decoration: none;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  margin: 0;
 }
 
 a:hover {
   opacity: 0.7;
+}
+
+button {
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 800px) {
@@ -131,7 +142,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   .section .title {
     font-size: 36px;
@@ -155,9 +166,12 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 94vw;
     margin: auto;
     margin-top: 20px;
@@ -185,14 +199,25 @@ a:hover {
   }
   .section .profile .image {
     width: 300px;
-    height: 90%;
+    height: calc(95% - 50px);
   }
   .section .profile .carousel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 10%;
-    border: 1px solid black;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px;
+    margin-top: 5%;
+  }
+  .section .profile .carousel .icon {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
   }
   .section .grid {
     display: -webkit-box;
@@ -209,6 +234,7 @@ a:hover {
     -ms-flex-line-pack: start;
         align-content: flex-start;
     min-width: 390px;
+    margin-top: 10px;
     margin-right: 10px;
     width: 94vw;
   }
@@ -254,14 +280,39 @@ a:hover {
   }
   .section .card.vertical {
     width: 15vw;
-    margin: 10px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .section .card.vertical .image {
     width: 200px;
     height: 280px;
     max-width: 13vw;
   }
-  .section textarea {
+  .section .card.vertical:hover {
+    opacity: 0.7;
+  }
+  .section .card.mini {
+    width: 15vw;
+  }
+  .section .card.mini .image {
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    max-width: 13vw;
+  }
+  .section .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .section .form textarea {
     width: 90vw;
     height: 100px;
     outline: none;
@@ -274,11 +325,23 @@ a:hover {
     margin-left: 10px;
     background: rgba(255, 255, 255, 0.8);
   }
+  .section .form button {
+    padding: 10px;
+    background: #0074ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+  }
   .section.right .grid {
     margin-left: 10px;
   }
   .section.first {
-    margin-top: 500px;
+    margin-top: 400px;
+  }
+  .section.footer {
+    margin-top: 1vw;
+    margin-bottom: 100px;
   }
 }
 
@@ -489,6 +552,24 @@ a:hover {
     width: 88vw;
     height: 88vw;
   }
+  .section .profile .carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px;
+    margin-top: 5%;
+  }
+  .section .profile .carousel .icon {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+  }
   .section .grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -553,6 +634,21 @@ a:hover {
     border: 1px solid black;
     width: 40vw;
     height: 60vw;
+  }
+  .section .card.mini {
+    width: 40vw;
+    margin: 2vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-size: cover;
+  }
+  .section .card.mini .image {
+    background: white;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid black;
+    width: 40vw;
+    height: 20vw;
   }
   .section .form {
     width: 90vw;
