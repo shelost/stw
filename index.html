@@ -8,10 +8,11 @@
     <link href = 'style.css' rel = 'stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
 </head>
 <body>
-
 
     <div id = 'navbar'>
         <h1 id = 'mast'> STW</h1>
@@ -91,15 +92,17 @@
         <div class = 'content'>
 
             <div class = 'profile'>
-                <div class = 'image' style='background-image: url(assets/stw.jpg)'>
 
-                </div>
+                <img class = 'image' src = 'assets/stw.jpg' alt = 'image'>
                 <div class = 'carousel'>
+                    <a href = 'https://twitter.com/financialwave?lang=en'>
+                        <img class = 'icon' src = 'assets/social-05.png' alt = 'icon'>
+                    </a>
                     <a href = 'https://www.linkedin.com/in/stephen-todd-walker-b9543015/'>
-                        <img class = 'icon' src = 'assets/icon-linkedin.png' alt = 'icon'>
+                        <img class = 'icon' src = 'assets/social-03.png' alt = 'icon'>
                     </a>
                     <a href = 'https://twitter.com/financialwave?lang=en'>
-                        <img class = 'icon' src = 'assets/icon-twitter.png' alt = 'icon'>
+                        <img class = 'icon' src = 'assets/social-01.png' alt = 'icon'>
                     </a>
                 </div>
             </div>
@@ -178,18 +181,29 @@
                 </p>
             </div>
             <div class = 'grid'>
-                <a href = '#'>
-                    <div class = 'image' style='background-image: url(assets/book-1.png)'> </div>
-                </a>
-                <a href = '#'>
-                    <div class = 'image' style='background-image: url(assets/book-2.png)'> </div>
-                </a>
-                <a href = '#'>
-                    <div class = 'image' style='background-image: url(assets/book-3.png)'> </div>
-                </a>
-                <a href = '#'>
-                    <div class = 'image' style='background-image: url(assets/book-4.jpeg)'> </div>
-                </a>
+
+                <div class = 'card vertical'>
+                    <img class = 'image' alt = 'image' src = 'assets/book-10.png'>
+                    <a href = 'https://www.amazon.com/Understanding-Alternative-Investments-Diversified-Portfolios-ebook/dp/B00KQIKL5A/ref=sr_1_3?crid=3UKPQDLDDD9AC&keywords=understanding+alternative+investments&qid=1644979435&s=books&sprefix=understanding+alternative+investments%2Cstripbooks%2C58&sr=1-3'>
+                        <button> Buy Now </button>
+                    </a>
+                </div>
+                <div class = 'card vertical'>
+                    <img class = 'image' alt = 'image' src = 'assets/book-11.png'>
+                    <a href = 'https://www.amazon.com/Wave-Theory-Alternative-Investments-Commodities/dp/0071742867'>
+                        <button> Buy Now </button>
+                    </a>
+                </div>
+                <div class = 'card vertical'>
+                    <img class = 'image' alt = 'image' src = 'assets/book-12.png'>
+                    <a href = 'assets/Riding The Right Wave With Managed Futures.pdf'>
+                        <button> View Article </button>
+                    </a>
+                </div>
+                <div class = 'card vertical'>
+                    <img class = 'image' alt = 'image' src = 'assets/book-13.png'>
+                </div>
+
             </div>
         </div>
     </div>
@@ -199,33 +213,51 @@
     <div class = 'section'>
         <h1 class = 'title'> Media </h1>
 
-        <div class = 'content'>
-            <div class = 'grid'>
-                <div class = 'image' style='background-image: url(assets/media-1.png)'>
-                </div>
-                <div class = 'image' style='background-image: url(assets/media-2.png)'>
-                </div>
-                <div class = 'image' style='background-image: url(assets/media-3.png)'>
-                </div>
-                <div class = 'image' style='background-image: url(assets/media-1.png)'>
-                </div>
+        <div class = 'blurb'>
+            <p>
+                Mr. Walker is a source regarding small businesses, venture capital, IPOs, and entrepreneurship. He has appeared on CNBC,
+                Fox Business, Business New Network, Market Watch, The Wealth Channel, and others. He was interviewed by Erin Burnett, the
+                late Mark Haynes, Maria Bartiromo, and others. He was on Opening Bell and Closing Bell. In addition, he has been quoted in
+                Barron’s, The Wall Street Journal, Philadelphia Inquirer, Reuters, Investment Advisor, Registered Rep, and the Philadelphia
+                Business Journal.
+            </p>
+            <p>
+                Besides sharing his expertise by radio, television, newspapers, books, periodicals, and academic institutions, Mr. Walker
+                lectures amongst his peers. He has spoken for iGlobal Forum- 2nd Annual Alternative Investments Summit, Barron’s Winner Circle,
+                Pensions & Investments Defined Contribution Conference, Index Universe ETF Conference, Philadelphia Securities Association,
+                and the Royal Oak Lecture Series at the Union League in Philadelphia.
+            </p>
+        </div>
+
+        <div class = 'row'>
+
+            <div class = 'card vertical big'>
+                <img class = 'image' alt = 'image' src = 'assets/media-1.png'>
             </div>
 
-            <div class = 'text'>
-                <p>
-                    Mr. Walker is a source regarding small businesses, venture capital, IPOs, and entrepreneurship. He has appeared on CNBC,
-                    Fox Business, Business New Network, Market Watch, The Wealth Channel, and others. He was interviewed by Erin Burnett, the
-                    late Mark Haynes, Maria Bartiromo, and others. He was on Opening Bell and Closing Bell. In addition, he has been quoted in
-                    Barron’s, The Wall Street Journal, Philadelphia Inquirer, Reuters, Investment Advisor, Registered Rep, and the Philadelphia
-                    Business Journal.
-                </p>
-                <p>
-                    Besides sharing his expertise by radio, television, newspapers, books, periodicals, and academic institutions, Mr. Walker
-                    lectures amongst his peers. He has spoken for iGlobal Forum- 2nd Annual Alternative Investments Summit, Barron’s Winner Circle,
-                    Pensions & Investments Defined Contribution Conference, Index Universe ETF Conference, Philadelphia Securities Association,
-                    and the Royal Oak Lecture Series at the Union League in Philadelphia.
-                </p>
-             </div>
+            <div class = 'card vertical big'>
+                <img class = 'image' alt = 'image' src = 'assets/media-2.png'>
+            </div>
+
+            <div class = 'card podcast'>
+                <img class = 'image' alt = 'image' src = 'assets/smerconish.png'>
+
+                <audio controls>
+                    <source src="assets/smerconish.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class = 'card podcast'>
+                <img class = 'image' alt = 'image' src = 'assets/madness.png'>
+
+                <audio controls>
+                    <source src="assets/madness.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+
         </div>
     </div>
 
@@ -236,25 +268,21 @@
 
         <div class = 'row'>
             <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/lecture-1.jpeg)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/lecture-1.jpeg'>
                 <p> Wharton School of the University of Pennsylvania Behavioral Finance Lecture at Huntsman Hall </p>
             </div>
             <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/lecture-2.png)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/lecture-2.png'>
                 <p> CVCA- Mr. Walker was the key note speaker for CVCA (Canadian Venture Capital Association).
                     The central topic of the conference was the importance of venture capital and IPOs for both the United States and Canada.
                     700 Institutional investors attended the conference and heard Mr. Walker’s views. </p>
             </div>
             <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/lecture-3.jpeg)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/lecture-3.jpeg'>
                 <p> Barron’s- Barron’s Winner Circle </p>
             </div>
             <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/lecture-4.jpeg)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/lecture-4.jpeg'>
                 <p> Inside ETFs- Index Universe ETF Conference </p>
             </div>
         </div>
@@ -265,72 +293,73 @@
     <div class = 'section' id = 'print'>
         <h1 class = 'title'> Print </h1>
 
-        <p class = 'blurb'>
-            Mr. Walker is a source regarding small businesses, venture capital, IPOs, entrepreneurship, and diversification.
-            Separate from his finance books and journals, he has been quoted in Barron’s, The Wall Street Journal, Philadelphia
-            Inquirer, Reuters, Investment Advisor, Registered Rep, Fund Web, Fox Business, Think Advisor, and the Philadelphia
-            Business Journal.
-        </p>
+        <div class = 'blurb'>
+            <p>
+                Mr. Walker is a source regarding small businesses, venture capital, IPOs, entrepreneurship, and diversification.
+                Separate from his finance books and journals, he has been quoted in Barron’s, The Wall Street Journal, Philadelphia
+                Inquirer, Reuters, Investment Advisor, Registered Rep, Fund Web, Fox Business, Think Advisor, and the Philadelphia
+                Business Journal.
+            </p>
+        </div>
+
 
         <div class = 'row'>
             <div class = 'card vertical'>
+                <img class = 'image' alt = 'image' src = 'assets/print-1.png'>
                 <a href = 'assets/Barrons.pdf'>
-                    <div class = 'image' style='background-image: url(assets/print-1.png)'>
-                    </div>
+                    <button> View Article </button>
                 </a>
             </div>
             <div class = 'card vertical'>
+                <img class = 'image' alt = 'image' src = 'assets/print-2.png'>
                 <a href = 'assets/Fox Business.pdf'>
-                    <div class = 'image' style='background-image: url(assets/print-2.png)'>
-                    </div>
+                    <button> View Article </button>
                 </a>
             </div>
             <div class = 'card vertical'>
+                <img class = 'image' alt = 'image' src = 'assets/print-3.png'>
                 <a href = 'assets/FundWeb.pdf'>
-                    <div class = 'image' style='background-image: url(assets/print-3.png)'>
-                    </div>
+                    <button> View Article </button>
                 </a>
             </div>
             <div class = 'card vertical'>
+                 <img class = 'image' alt = 'image' src = 'assets/print-4.png'>
                 <a href = 'assets/Real Estate.pdf'>
-                    <div class = 'image' style='background-image: url(assets/print-4.png)'>
-                    </div>
+                    <button> View Article </button>
                 </a>
             </div>
             <div class = 'card vertical'>
+                <img class = 'image' alt = 'image' src = 'assets/print-5.png'>
                 <a href = 'assets/ThinkAdvisor.pdf'>
-                    <div class = 'image' style='background-image: url(assets/print-5.png)'>
-                    </div>
+                    <button> View Article </button>
                 </a>
             </div>
             <div class = 'card vertical'>
+                <img class = 'image' alt = 'image' src = 'assets/print-6.png'>
                 <a href = 'assets/wsj.pdf'>
-                    <div class = 'image' style='background-image: url(assets/print-6.png)'>
-                    </div>
+                    <button> View Article </button>
                 </a>
             </div>
         </div>
 
         <div class = 'row'>
-            <div class = 'card mini' >
-                <div class = 'image' style='background-image: url(assets/barrons.png)'>
-                </div>
-            </div>
             <div class = 'card mini'>
-                <div class = 'image' style='background-image: url(assets/fundweb.jpg)'>
-                </div>
-            </div>
-            <div class = 'card mini'>
-                <div class = 'image' style='background-image: url(assets/thinkadvisor.png)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/stw-06.png'>
             </div>
             <div class = 'card mini' >
-                <div class = 'image' style='background-image: url(assets/fox.png)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/stw-01.png'>
             </div>
             <div class = 'card mini'>
-                <div class = 'image' style='background-image: url(assets/wsj.png)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/stw-02.png'>
+            </div>
+            <div class = 'card mini'>
+                <img class = 'image' alt = 'image' src = 'assets/stw-03.png'>
+            </div>
+            <div class = 'card mini' >
+                <img class = 'image' alt = 'image' src = 'assets/stw-04.png'>
+            </div>
+            <div class = 'card mini'>
+                <img class = 'image' alt = 'image' src = 'assets/stw-05.png'>
             </div>
         </div>
     </div>
@@ -340,32 +369,41 @@
     <div class = 'section right'>
         <h1 class = 'title'> Awards </h1>
 
-        <p class = 'blurb'>
-            In his financial career Walker received numerous awards and recognitions. While at Alex. Brown, he was a member of Alex.
-            Brown's "elite Flagship group". When Walker transitioned to Morgan Stanley, he rose through the ranks and became a member of
-            the "prestigious chairman’s group” for outstanding achievement. Aside from his work related achievements, Walker was frequently
-            featured in publications that honored him for outstanding achievement. He was listed in the Philadelphia Business Journal as
-            one of the “Winner’s Circle: The Top Wealth Advisors”.
-        </p>
+        <div class = 'blurb'>
+            <p>
+                In his financial career Walker received numerous awards and recognitions. While at Alex. Brown, he was a member of Alex.
+                Brown's "elite Flagship group". When Walker transitioned to Morgan Stanley, he rose through the ranks and became a member of
+                the "prestigious chairman’s group” for outstanding achievement. Aside from his work related achievements, Walker was frequently
+                featured in publications that honored him for outstanding achievement. He was listed in the Philadelphia Business Journal as
+                one of the “Winner’s Circle: The Top Wealth Advisors”.
+            </p>
+        </div>
 
         <div class = 'row'>
             <div class = 'card' >
-                <div class = 'image' style='background-image: url(assets/40.jpg)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/stw-08.png'>
                 <h1> PBJ 40 Under 40 </h1>
-                <p> According to the Philadelphia Business Journal in a publication honoring the “top young entrepreneurs in the Philadelphia area." </p>
+                <p>
+                    According to the <a href = 'assets/40under40.pdf'> Philadelphia Business Journal </a> in a publication honoring the
+                    “top young entrepreneurs in the Philadelphia area."
+                </p>
             </div>
             <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/barrons.png)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/stw-07.png'>
                 <h1> Barrons Top 1000 Advisors </h1>
-                <p> Listed as Top Advisor in a press release in 2008. In 2009 and 2010, Stephen Todd Walker was listed by Barron's as “one of the Top 1000 Advisors”. </p>
+                <p>
+                    Listed as Top Advisor in a <a href = 'assets/Top Advisors Press Release MS.pdf'> press release </a> in 2008.
+                    In <a href = "assets/2009 Barron's Top 1000.pdf"> 2009 </a> and <a href = "assets/2010 Barron's Top 1000.pdf"> 2010 </a>,
+                    Stephen Todd Walker was listed by Barron's as “one of the Top 1000 Advisors”.
+                </p>
             </div>
             <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/pbj.jpg)'>
-                </div>
+                <img class = 'image' alt = 'image' src = 'assets/stw-09.png'>
                 <h1> Top 25 Wealth Advisers </h1>
-                <p> Additionally, Stephen Todd Walker was named “one of the Top 25 Wealth Advisers” in the 2009 Book of Lists by the Philadelphia Business Journal. </p>
+                <p>
+                    Additionally, Stephen Todd Walker was named “one of the Top 25 Wealth Advisers” in the
+                    <a href = 'assets/Book of LIsts 2009 PBJ(1).pdf'> 2009 Book of Lists</a> by the Philadelphia Business Journal.
+                </p>
             </div>
         </div>
     </div>
@@ -375,52 +413,44 @@
     <div class = 'section'>
         <h1 class = 'title'> Philanthropy </h1>
 
-        <p class = 'blurb'>
-            Mr. Walker served as a Director of the Board of Big Brothers/Big Sisters of Montgomery County and was involved with many other charitable
-            organizations including the Boy Scouts of America, Red Cross, American Heart Association, Philadelphia Art Museum, Please Touch Museum
-            for Children, Philadelphia Zoo, Philadelphia Orchestra, and the Franklin Institute. He served on the Board of Directors for The Space
-            Shuttle Children’s Fund. Check out Stephen Todd Walker's community involvment here.
-        </p>
+        <div class = 'blurb'>
+            <p>
+                Mr. Walker served as a Director of the Board of Big Brothers/Big Sisters of Montgomery County and was involved with many other charitable
+                organizations including the Boy Scouts of America, Red Cross, American Heart Association, Philadelphia Art Museum, Please Touch Museum
+                for Children, Philadelphia Zoo, Philadelphia Orchestra, and the Franklin Institute. He served on the Board of Directors for The Space
+                Shuttle Children’s Fund. Check out Stephen Todd Walker's community involvment here.
+            </p>
+        </div>
 
         <div class = 'shelf'>
-            <div class = 'card' >
-                <div class = 'image' style='background-image: url(assets/phil-1.png)'>
-                </div>
-            </div>
-            <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/phil-2.png)'>
-                </div>
-            </div>
-            <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/phil-3.png)'>
-                </div>
-            </div>
-            <div class = 'card' >
-                <div class = 'image' style='background-image: url(assets/phil-4.png)'>
-                </div>
-            </div>
-            <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/phil-5.png)'>
-                </div>
-            </div>
-            <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/phil-6.png)'>
-                </div>
-            </div>
-            <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/phil-7.png)'>
-                </div>
-            </div>
-            <div class = 'card'>
-                <div class = 'image' style='background-image: url(assets/phil-8.png)'>
-                </div>
-            </div>
+            <a href = 'assets/phil-1.png'>
+                <img class = 'image' alt = 'image' src = 'assets/phil-1.png'>
+            </a>
+            <a href = 'assets/phil-2.png'>
+                <img class = 'image' alt = 'image' src = 'assets/phil-2.png'>
+            </a>
+            <a href = 'assets/phil-3.png'>
+                <img class = 'image' alt = 'image' src = 'assets/phil-3.png'>
+            </a>
+            <a href = 'assets/phil-4.png'>
+                <img class = 'image' alt = 'image' src = 'assets/phil-4.png'>
+            </a>
+            <a href = 'assets/phil-5.png'>
+                <img class = 'image' alt = 'image' src = 'assets/phil-5.png'>
+            </a>
+            <a href = 'assets/phil-6.png'>
+                <img class = 'image' alt = 'image' src = 'assets/phil-6.png'>
+            </a>
+            <a href = 'assets/phil-9.png'>
+                <img class = 'image' alt = 'image' src = 'assets/phil-9.png'>
+            </a>
         </div>
     </div>
 
     <a id = 'contact' class = 'anchor'> </a>
 
-    <div class = 'section right' id = 'contact'>
+    <!--
+ <div class = 'section right' id = 'contact'>
         <h1 class = 'title'> Contact </h1>
         <p class = 'blurb'>
             Please fill out the form below and Stephen Todd Walker will get back to at his earliest convenience.
@@ -429,11 +459,36 @@
             <textarea id = 'message'></textarea>
             <button id = 'send'> Send </button>
         </div>
-    </div>
 
-    <div class = 'section footer'>
-        <p> Stephen Todd Walker | Website by Heewon Ahn | All Rights Reserved © 2021 </p>
-    </div>
+     </div>
+    -->
+
+    <!--
+
+
+    <form id="contactform" action="send_email.php" method="post" class="validateform" name="send-contact">
+        <div class="row">
+            <div class="col-lg-4 field">
+                <input type="text" name="name" placeholder="* Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+            </div>
+            <div class="col-lg-4 field">
+                <input type="text" name="email" placeholder="* Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            </div>
+            <div class="col-lg-4 field">
+                <input type="text" name="subject" placeholder="Subject" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+            </div>
+            <div class="col-lg-4 field">
+                <input type="text" name="ContactNumber" placeholder="* Contact Number" data-rule="required" data-msg="Please enter your number" />
+            </div>
+            <div class="col-lg-12 margintop10 field">
+                <textarea rows="12" name="message" class="input-block-level" placeholder="* Your message here..." data-rule="required" data-msg="Please write something"></textarea>
+                <p>
+                    <button name="submit" value="submit" class="btn btn-theme margintop10 pull-left" type="submit">Submit message</button>
+                </p>
+            </div>
+        </div>
+    </form>
+    -->
 
 </body>
 
